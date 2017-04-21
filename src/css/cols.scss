@@ -1,0 +1,8 @@
+$device-list:320px 360px 365px 375px 412px 414px 750px;
+@each $width in $device-list{
+    @media screen and (min-width:#{$width}){
+        html{
+            font-size: ($width/750) * 100;
+        }
+    }
+}
