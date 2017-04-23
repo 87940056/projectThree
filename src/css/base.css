@@ -1,11 +1,11 @@
-body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p,pre,form,input,p,pre,img{
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p,pre,form,input,img{
 	margin:0;
 	padding:0;
 	list-style: none;
 	border:none;
 	font-weight: normal;
 	font-size: 14px;
-	font-family: "微软雅黑" helvetica sans-serif;
+	font-family: "微软雅黑",helvetica,sans-serif;
 }
 
 a{
