@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="<?php echo JS_PATH;?>react.js"></script>
-    <script src="<?php echo JS_PATH;?>react-dom.js"></script>
-    <script type='text/babel' src="<?php echo JS_PATH;?>index.jsx"></script>
-    <script src="<?php echo JS_PATH;?>browser.min.js"></script>
+    <script src="<?php echo JS_PATH ?>/react.js"></script>
+    <script src="<?php echo JS_PATH ?>/react-dom.js"></script>
+    <script src="<?php echo JS_PATH ?>/browser.min.js"></script>
+    <script type="text/babel" src="<?php echo JS_PATH ?>/index.jsx"></script>
 </head>
 <style>
     *{
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         list-style: none;
+        text-decoration: none;
     }
-    .album{
-        width:100%;
-        height:100vh;
-        border:1px solid #000;
+    .album_list{
+        border: 1px solid #333;
+        min-height: 100vh;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    .item{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: darkolivegreen;
+        margin: 0 0 10px;
+    }
+    .hide{
+        display: none;
+    }
 </style>
 <body>
-   <div id="root"></div>
+<div id="container"></div>
+
 </body>
 </html>

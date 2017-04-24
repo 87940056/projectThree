@@ -1,23 +1,27 @@
 <?php
+
 namespace App\model;
 
-use Core\dbpdo;
+use Core\dbPdo;
 
-class MusicModel extends dbpdo {
-    public function __construct()
-    {
+class musicModel extends dbPdo
+{
+    public function __construct(){
         parent::__construct();
     }
-    public function getAllAlbum(){
-       return  $this->fetchall('select * from album');
+    public function getAllAlbum()
+    {
+        return $this->fetchAll('select * from album');
     }
-    public function deleteAlbumId($id){
-        $where = Array(
+    public function deleteAlbumById($id)
+    {
+        $where=Array(
             'id'=>$id
         );
         return $this->delete('album',$where);
     }
-    public function addAlbum($data){
-        return $this->insert("album",$data);
+    public function addAlbum($data)
+    {
+        return $this->insert('album',$data);
     }
 }
